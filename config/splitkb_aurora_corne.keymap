@@ -21,9 +21,9 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp ESC    &kp Q     &kp W  &kp F      &kp P      &kp B    &kp J  &kp L      &kp U     &kp Y      &kp P    &kp DELETE
+&kp ESC    &kp Q     &kp W  &kp F      &kp P      &kp B    &kp J  &kp L      &kp U     &kp Z      &kp P    &kp DELETE
 &kp TAB    &kp A     &kp R  &kp S      &kp T      &kp G    &kp M  &kp N      &kp E     &kp I      &kp O    &kp BACKSPACE
-&kp LCTRL  &kp LGUI  &kp Z  &kp X      &kp C      &kp V    &kp K  &kp H      &kp D     &kp COMMA  &kp DOT  &kp MINUS
+&kp LCTRL  &kp LGUI  &kp Y  &kp X      &kp C      &kp V    &kp K  &kp H      &kp D     &kp COMMA  &kp DOT  &kp FSLH
                             &kp LSHFT  &kp SPACE  &mo 1    &mo 2  &kp ENTER  &kp RALT
             >;
         };
@@ -36,11 +36,13 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp N0  &kp N1  &kp N2  &kp N3  &kp ASTERISK    &kp GT     &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp BACKSLASH  &kp PERCENT  &trans
-&trans  &mo 6   &kp N4  &kp N5  &kp N6  &kp PLUS        &kp EQUAL  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SLASH      &kp TILDE    &trans
-&trans  &trans  &kp N7  &kp N8  &kp N9  &kp MINUS       &kp LT     &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PIPE       &kp DOLLAR   &trans
-                        &trans  &trans  &trans          &trans     &trans                &trans
+&trans  &kp LS(N0)  &kp LS(N1)  &kp LS(N2)  &kp LS(N3)  &kp STAR     &kp RA(DOT)    &kp RA(LEFT_BRACE)   &kp RA(RIGHT_BRACE)  &kp LS(COMMA)  &kp RA(NUMBER_5)  &trans
+&trans  &mo 6       &kp LS(N4)  &kp LS(N5)  &kp LS(N6)  &kp PLUS     &kp MINUS      &kp LS(RIGHT_BRACE)  &kp RIGHT_BRACE      &kp LS(SLASH)  &kp LS(PERIOD)    &trans
+&trans  &trans      &kp LS(N7)  &kp LS(N8)  &kp LS(N9)  &kp MINUS    &kp RA(COMMA)  &kp RA(N9)           &kp RA(NUMBER_0)     &kp LS(APOS)   &kp GRAVE         &trans
+                                &trans      &trans      &trans       &trans         &trans               &trans
             >;
+
+            label = "num,sym";
         };
 
         nav,sym {
@@ -51,11 +53,13 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp CARET  &trans    &kp CS_EURO  &kp CS_CARON   &trans       &kp GRAVE          &kp HOME   &kp PG_DN      &kp PG_UP     &kp END          &trans
-&trans  &kp AT     &kp AMPS  &kp LALT     &kp CS_ACUTE   &kp POUND    &kp DOUBLE_QUOTES  &kp LEFT   &kp DOWN       &kp UP        &kp RIGHT        &trans
-&trans  &trans     &trans    &trans       &kp CS_DEGREE  &kp TILDE    &kp SINGLE_QUOTE   &kp COLON  &kp SEMICOLON  &kp QUESTION  &kp EXCLAMATION  &trans
-                             &trans       &trans         &trans       &trans             &trans     &trans
+&trans  &trans            &kp RA(NUMBER_3)  &kp RA(E)  &kp LS(EQUAL)  &kp RA(GRAVE)        &kp RA(BACKSLASH)      &kp HOME          &kp PG_DN          &kp PG_UP  &kp END           &trans
+&trans  &kp RA(NUMBER_2)  &kp RA(NUMBER_7)  &kp LALT   &kp EQUAL      &kp LS(SEMICOLON)    &kp LS(LEFT_BRACE)     &kp LEFT          &kp DOWN           &kp UP     &kp RIGHT         &trans
+&trans  &trans            &trans            &trans     &kp LS(GRAVE)  &kp LS(BACKSLASH)    &kp RA(LS(BACKSLASH))  &kp RA(NUMBER_6)  &kp RA(LS(GRAVE))  &trans     &kp RA(NUMBER_4)  &trans
+                                            &trans     &trans         &trans               &trans                 &trans            &trans
             >;
+
+            label = "nav,sym";
         };
 
         layer_3 {
@@ -85,13 +89,15 @@
             >;
         };
 
-        bt,fun,medisa {
+        bt,fun,media {
             bindings = <
 &trans  &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2     &kp C_VOLUME_UP      &kp C_NEXT        &kp F1  &kp F2   &kp F3   &kp F4   &trans
-&trans  &trans      &bt BT_SEL 3  &bt BT_SEL 4    &trans           &kp K_MUTE           &kp C_PLAY_PAUSE  &kp F5  &kp F6   &kp F7   &kp F8   &trans
+&trans  &trans      &bt BT_SEL 3  &bt BT_SEL 4    &trans           &kp C_MUTE           &kp C_PLAY_PAUSE  &kp F5  &kp F6   &kp F7   &kp F8   &trans
 &trans  &trans      &trans        &studio_unlock  &kp PRINTSCREEN  &kp C_VOLUME_DOWN    &kp C_PREVIOUS    &kp F9  &kp F10  &kp F11  &kp F12  &trans
                                   &trans          &trans           &trans               &trans            &trans  &trans
             >;
+
+            label = "bt,fun,media";
         };
     };
 };
