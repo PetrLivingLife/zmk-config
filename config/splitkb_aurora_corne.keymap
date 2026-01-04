@@ -25,6 +25,8 @@
 &kp LCTRL  &kp LGUI  &kp Y  &kp X      &kp C      &kp V    &kp K  &kp H      &kp D     &kp COMMA  &kp DOT  &kp FSLH
                             &kp LSHFT  &kp SPACE  &mo 1    &mo 2  &kp ENTER  &kp RALT
             >;
+
+            label = "base";
         };
 
         num,sym {
