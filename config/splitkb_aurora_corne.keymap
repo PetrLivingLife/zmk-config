@@ -54,7 +54,7 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &trans            &kp RA(NUMBER_3)  &kp RA(E)  &kp LS(EQUAL)  &kp RA(GRAVE)        &kp RA(BACKSLASH)      &kp HOME          &kp PG_DN          &kp PG_UP  &kp END           &trans
+&trans  &kp APOSTROPHE    &kp RA(NUMBER_3)  &kp RA(E)  &kp LS(EQUAL)  &kp RA(GRAVE)        &kp RA(BACKSLASH)      &kp HOME          &kp PG_DN          &kp PG_UP  &kp END           &trans
 &trans  &kp RA(NUMBER_2)  &kp RA(NUMBER_7)  &kp LALT   &kp EQUAL      &kp LS(SEMICOLON)    &kp LS(LEFT_BRACE)     &kp LEFT          &kp DOWN           &kp UP     &kp RIGHT         &trans
 &trans  &trans            &trans            &trans     &kp LS(GRAVE)  &kp LS(BACKSLASH)    &kp RA(LS(BACKSLASH))  &kp RA(NUMBER_6)  &kp RA(LS(GRAVE))  &trans     &kp RA(NUMBER_4)  &trans
                                             &trans     &trans         &trans               &trans                 &trans            &trans
