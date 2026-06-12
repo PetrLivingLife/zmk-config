@@ -55,7 +55,7 @@
 
             bindings = <
 &trans  &trans  &kp LS(LEFT_GUI)  &kp LA(LCTRL)  &kp ESCAPE  &kp DELETE         &kp RA(BACKSLASH)      &kp HOME   &kp PG_DN      &kp PG_UP          &kp END    &trans
-&trans  &trans  &kp LSHFT         &kp LCTRL      &kp X       &kp TAB            &kp LS(DELETE)         &kp LEFT   &kp DOWN       &kp UP             &kp RIGHT  &trans
+&trans  &trans  &kp LSHFT         &kp LCTRL      &kp X       &kp TAB            &kp DELETE             &kp LEFT   &kp DOWN       &kp UP             &kp RIGHT  &trans
 &trans  &trans  &trans            &kp LALT       &kp Q       &kp PRINTSCREEN    &kp RA(LS(BACKSLASH))  &kp EQUAL  &kp LS(EQUAL)  &kp RA(LS(GRAVE))  &mo 3      &trans
                                   &trans         &trans      &trans             &trans                 &trans     &trans
             >;
@@ -65,10 +65,10 @@
 
         sym2 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+&trans  &trans            &trans  &trans            &trans            &trans       &kp RA(GRAVE)       &trans         &trans     &kp BACKSLASH      &trans  &trans
+&trans  &kp RA(NUMBER_2)  &trans  &kp RA(NUMBER_7)  &kp RA(NUMBER_3)  &kp RA(E)    &kp LS(SEMICOLON)   &kp LS(GRAVE)  &kp GRAVE  &kp LS(BACKSLASH)  &trans  &trans
+&trans  &trans            &trans  &trans            &trans            &trans       &kp LS(APOSTROPHE)  &trans         &trans     &kp SINGLE_QUOTE   &trans  &trans
+                                  &trans            &trans            &trans       &trans              &trans         &trans
             >;
 
             label = "sym2";
