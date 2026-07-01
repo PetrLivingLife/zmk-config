@@ -65,10 +65,10 @@
 
         sym2 {
             bindings = <
-&trans  &trans            &trans  &trans            &trans            &kp BACKSPACE    &trans         &trans             &trans             &kp SINGLE_QUOTE      &trans  &trans
-&trans  &kp RA(NUMBER_2)  &trans  &kp RA(NUMBER_7)  &kp RA(NUMBER_3)  &kp RA(E)        &kp RA(GRAVE)  &kp LS(GRAVE)      &kp GRAVE          &kp LS(SINGLE_QUOTE)  &trans  &trans
-&trans  &trans            &trans  &trans            &trans            &trans           &kp RA(GRAVE)  &kp LS(BACKSLASH)  &kp LS(SEMICOLON)  &kp BACKSLASH         &trans  &trans
-                                  &trans            &trans            &trans           &trans         &trans             &trans
+&trans  &trans            &trans  &trans            &trans            &kp BACKSPACE    &trans  &kp BACKSLASH      &kp BACKSPACE      &kp SINGLE_QUOTE      &trans  &trans
+&trans  &kp RA(NUMBER_2)  &trans  &kp RA(NUMBER_7)  &kp RA(NUMBER_3)  &kp RA(E)        &trans  &kp LS(BACKSLASH)  &kp LS(SEMICOLON)  &kp RA(GRAVE)         &trans  &trans
+&trans  &trans            &trans  &trans            &trans            &trans           &trans  &kp LS(GRAVE)      &kp GRAVE          &kp LS(SINGLE_QUOTE)  &trans  &trans
+                                  &trans            &trans            &trans           &trans  &trans             &trans
             >;
 
             label = "sym2";
