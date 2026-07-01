@@ -37,7 +37,7 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &trans  &mo 3             &kp LS(N7)  &kp LS(N8)  &kp LS(N9)    &kp RA(NUMBER_6)    &kp NUMBER_1  &kp LBKT          &kp RBKT          &trans         &trans
+&trans  &trans  &mo 3             &kp LS(N7)  &kp LS(N8)  &kp LS(N9)    &kp RA(NUMBER_6)    &kp NUMBER_1  &kp RA(LBKT)      &kp RA(RBKT)      &trans         &trans
 &trans  &mo 2   &kp LS(NUMBER_0)  &kp LS(N1)  &kp LS(N2)  &kp LS(N3)    &kp RA(NUMBER_8)    &kp MINUS     &kp LS(RBKT)      &kp RBKT          &kp LS(SLASH)  &trans
 &trans  &trans  &trans            &kp LS(N4)  &kp LS(N5)  &kp LS(N6)    &kp LS(LEFT_BRACE)  &kp SLASH     &kp RA(NUMBER_9)  &kp RA(NUMBER_0)  &kp LS(MINUS)  &trans
                                   &trans      &trans      &trans        &trans              &trans        &trans
